@@ -32,26 +32,36 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.38em] text-sky-300">
+          <p className="text-4xl sm:text-4xl lg:text-4xl font-semibold uppercase tracking-[0.38em] text-sky-300">
             Vimal Kumar
           </p>
-          <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-tight text-slate-50 sm:text-6xl lg:text-7xl">
-            Engineering enterprise systems with architecture, code, and AI.
+          <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-4xl">
+            AI-Assisted Software Architecture | Microservices | API Engineering
+            | Backend Development | Blazor Development
           </h1>
           <p className="mt-6 text-2xl font-medium text-slate-200">
             <TypingTitle />
           </p>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Team Lead and Senior .NET Engineering Professional with 11+ years
-            delivering .NET 8, .NET Core, Blazor, API, ERP, LMS, dashboard, and
-            workflow platforms for complex organizations.
+            Senior .NET Engineer and technical leader with 10+ years of
+            experience designing and delivering scalable enterprise
+            applications. Expertise in .NET 8, ASP.NET Core, C#, Blazor, Web
+            APIs, Microservices, SQL Server, and AI-assisted software
+            development, with a strong focus on clean architecture, performance,
+            and business impact.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-sky-300" href="#projects">
+            <a
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 backdrop-blur transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-sky-300"
+              href="#projects"
+            >
               <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
               View Projects
             </a>
-            <a className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition hover:border-sky-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-sky-300" href="/resume/vimal-kumar-resume.pdf">
+            <a
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition hover:border-sky-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-sky-300"
+              href="/resume/vimal-kumar-resume.pdf"
+            >
               <Download className="h-4 w-4" />
               Download Resume
             </a>
@@ -66,8 +76,10 @@ export function Hero() {
           <div className="absolute inset-10 rounded-full border border-blue-400/20" />
           <div className="absolute inset-20 rounded-full border border-sky-200/15" />
           <div className="absolute left-1/2 top-1/2 grid h-44 w-44 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-white/10 bg-slate-900/80 text-center shadow-2xl shadow-sky-950/40">
-            <span className="text-5xl font-semibold text-slate-50">11+</span>
-            <span className="px-6 text-sm text-slate-300">years of software delivery</span>
+            <span className="text-5xl font-semibold text-slate-50">10+</span>
+            <span className="px-6 text-sm text-slate-300">
+              Years in Software Engineering
+            </span>
           </div>
           {heroBadges.map((badge, index) => {
             const angle = (index / heroBadges.length) * Math.PI * 2;

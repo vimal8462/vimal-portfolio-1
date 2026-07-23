@@ -6,10 +6,14 @@ type SectionHeadingProps = {
   description: string;
 };
 
-export function SectionHeading({ eyebrow, title, description }: SectionHeadingProps) {
+export function SectionHeading({
+  eyebrow,
+  title,
+  description,
+}: SectionHeadingProps) {
   return (
     <Reveal className="mx-auto mb-12 max-w-3xl text-center">
-      <p className="text-sm font-semibold uppercase tracking-[0.35em] text-sky-300">
+      <p className="text-4xl font-semibold uppercase tracking-[0.35em] text-sky-300">
         {eyebrow}
       </p>
       <h2 className="mt-4 text-3xl font-semibold text-slate-50 sm:text-4xl">

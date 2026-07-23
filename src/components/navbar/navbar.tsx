@@ -25,8 +25,11 @@ export function Navbar() {
         }`}
         aria-label="Main navigation"
       >
-        <a href="#home" className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-50">
-          Vimal
+        <a
+          href="#home"
+          className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-50"
+        >
+          Vimal Kumar
         </a>
         <div className="hidden items-center gap-2 md:flex">
           {navItems.map((item) => (
