@@ -19,8 +19,8 @@ export function ExperienceTimeline() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Experience"
-          title="A decade of engineering across platforms, teams, and architecture."
-          description="Expandable career milestones covering responsibilities, technology choices, and the steady move from feature delivery into solution ownership."
+          title="A decade of engineering, delivery, and technical leadership."
+          description="Expandable career milestones covering engineering responsibilities, technology decisions, team leadership, and the progression from hands-on development to end-to-end technical delivery."
         />
         <div className="relative">
           <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-sky-300 via-blue-600 to-transparent md:block" />
@@ -120,7 +120,7 @@ export function ExperienceTimeline() {
                                 {item.keyProjects.map((project) => (
                                   <span
                                     key={project}
-                                    className="rounded-lg border border-blue-400/20 bg-blue-500/5 px-3 py-1.5 text-xs font-medium text-sky-100 hover:bg-blue-100/10 transition"
+                                    className="rounded-lg border border-blue-400/20 bg-blue-500/5 px-3 py-1.5 text-xs font-medium text-sky-100 hover:bg-blue-100/10 hover:-translate-y-1 transition "
                                   >
                                     {project}
                                   </span>
@@ -139,7 +139,7 @@ export function ExperienceTimeline() {
                               {item.technologies.map((tech) => (
                                 <span
                                   key={tech}
-                                  className="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-200 hover:bg-blue-500/10 transition"
+                                  className="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-200 hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100  hover:bg-blue-500/10 transition"
                                 >
                                   {tech}
                                 </span>

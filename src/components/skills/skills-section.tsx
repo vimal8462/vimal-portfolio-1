@@ -14,12 +14,12 @@ function SkillRing({ name, level }: { name: string; level: number }) {
     if (percentage >= 70) return "Advanced";
     if (percentage >= 50) return "Proficient";
 
-    return "Working Knowledge";
+    return "Foundational";
   };
 
   return (
     <div className="grid place-items-center gap-3">
-      <div className="relative h-32 w-32 lg:h-36 lg:w-36">
+      <div className="group relative h-32 w-32 lg:h-36 lg:w-36">
         <svg
           className="h-full w-full -rotate-90"
           viewBox="0 0 100 100"
@@ -33,6 +33,7 @@ function SkillRing({ name, level }: { name: string; level: number }) {
             strokeWidth="7"
             fill="none"
           />
+
           <motion.circle
             cx="50"
             cy="50"
@@ -49,6 +50,7 @@ function SkillRing({ name, level }: { name: string; level: number }) {
             transition={{ duration: 1.1, ease: "easeOut" }}
             strokeDasharray={circumference}
           />
+
           <defs>
             <linearGradient id="skillGradient" x1="0" x2="1" y1="0" y2="1">
               <stop stopColor="#38BDF8" />
@@ -56,11 +58,56 @@ function SkillRing({ name, level }: { name: string; level: number }) {
             </linearGradient>
           </defs>
         </svg>
-        <span className="absolute inset-0 grid place-items-center px-4 text-center text-sm font-semibold leading-tight text-slate-50">
-          {/* {level}% */}
-          <span>{getProficiencyLevel(level)}</span>
+
+        {/* Proficiency Level */}
+        <span className="pointer-events-none absolute inset-0 grid place-items-center px-4 text-center text-sm font-semibold leading-tight text-slate-50">
+          {getProficiencyLevel(level)}
         </span>
+
+        {/* Hover Tooltip */}
+        <div
+          role="tooltip"
+          className="
+          pointer-events-none
+          absolute
+          left-1/2
+          top-0
+          z-20
+          -translate-x-1/2
+          -translate-y-full
+          whitespace-nowrap
+          rounded-md
+          border border-sky-300/20
+          bg-slate-950/95
+          px-3
+          py-1.5
+          text-xs
+          font-medium
+          text-sky-200
+          opacity-0
+          shadow-lg
+          backdrop-blur-md
+          transition-all
+          duration-200
+          group-hover:-translate-y-[calc(100%+8px)]
+          group-hover:opacity-100
+        "
+        >
+          {name}: {level}%{/* Tooltip Arrow */}
+          <span
+            className="
+            absolute
+            left-1/2
+            top-full
+            -translate-x-1/2
+            border-4
+            border-transparent
+            border-t-slate-950
+          "
+          />
+        </div>
       </div>
+
       <p className="text-center text-sm font-medium text-slate-200">{name}</p>
     </div>
   );
@@ -76,8 +123,8 @@ export function SkillsSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Skills"
-          title="Full-stack engineering with architectural depth."
-          description="A practical skill map spanning backend engineering, modern frontend development, software architecture, infrastructure, and AI-assisted development."
+          title="Full-stack engineering with enterprise delivery depth."
+          description="A practical skill map spanning backend engineering, modern frontend development, application architecture, database engineering, infrastructure, and AI-assisted development."
         />
         <Reveal>
           <div className="mx-auto mb-8 flex max-w-3xl flex-wrap justify-center gap-2 rounded-lg border border-white/10 bg-white/5 p-2">
@@ -120,10 +167,10 @@ export function SkillsSection() {
 
                 {/* Tech Stack Rows */}
                 <div className="flex flex-wrap justify-start gap-3">
-                  {group.items.map((techs, index) => (
+                  {group.items.map((techs) => (
                     <span
                       key={techs}
-                      className="rounded-lg border border-sky-300/20 bg-slate-900/60 px-4 py-2 text-sm text-slate-200 transition hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100"
+                      className="rounded-lg border border-sky-300/20 bg-slate-900/60 px-4 py-2 text-sm text-slate-200 transition hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100  hover:bg-blue-500/10"
                     >
                       {techs}
                     </span>

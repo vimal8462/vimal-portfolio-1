@@ -15,28 +15,10 @@ export function CertificationsSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="Credentials"
-          title="Resume-backed strengths, education, and certifications."
-          description="A consolidated view from the latest resume versions: core competencies, measurable highlights, NIIT certifications, education, and leadership strengths."
+          title="Professional credentials, education, and leadership strengths."
+          description="Academic qualifications, professional certifications, and leadership capabilities supporting more than a decade of software engineering experience."
         />
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <Reveal>
-            <GlassCard className="h-full">
-              <h3 className="text-xl font-semibold text-slate-50">
-                Core Competencies
-              </h3>
-              <div className="mt-5 grid gap-3">
-                {coreCompetencies.map((competency) => (
-                  <div
-                    key={competency}
-                    className="flex gap-3 text-sm leading-6 text-slate-300"
-                  >
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-300" />
-                    <span>{competency}</span>
-                  </div>
-                ))}
-              </div>
-            </GlassCard>
-          </Reveal>
           <Reveal delay={0.08}>
             <GlassCard className="h-full">
               <h3 className="text-xl font-semibold text-slate-50">Education</h3>
@@ -58,26 +40,7 @@ export function CertificationsSection() {
               </div>
             </GlassCard>
           </Reveal>
-        </div>
-        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {highlights.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <Reveal key={item.title} delay={index * 0.06}>
-                <GlassCard className="h-full">
-                  <Icon className="h-7 w-7 text-sky-300" />
-                  <h3 className="mt-5 text-lg font-semibold text-slate-50">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">
-                    {item.body}
-                  </p>
-                </GlassCard>
-              </Reveal>
-            );
-          })}
-        </div>
-        <div className="mt-6 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+
           <Reveal>
             <GlassCard className="h-full">
               <h3 className="text-xl font-semibold text-slate-50">
@@ -101,6 +64,47 @@ export function CertificationsSection() {
               </div>
             </GlassCard>
           </Reveal>
+        </div>
+
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {highlights.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <Reveal key={item.title} delay={index * 0.06}>
+                <GlassCard className="h-full">
+                  <Icon className="h-7 w-7 text-sky-300" />
+                  <h3 className="mt-5 text-lg font-semibold text-slate-50">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">
+                    {item.body}
+                  </p>
+                </GlassCard>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-[0.85fr_0.6fr]">
+          <Reveal>
+            <GlassCard className="h-full">
+              <h3 className="text-xl font-semibold text-slate-50">
+                Core Competencies
+              </h3>
+              <div className="mt-5 grid gap-3">
+                {coreCompetencies.map((competency) => (
+                  <div
+                    key={competency}
+                    className="flex gap-3 text-sm leading-6 text-slate-300"
+                  >
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-300" />
+                    <span>{competency}</span>
+                  </div>
+                ))}
+              </div>
+            </GlassCard>
+          </Reveal>
+
           <Reveal delay={0.08}>
             <GlassCard className="h-full">
               <h3 className="text-xl font-semibold text-slate-50">

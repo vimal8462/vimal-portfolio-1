@@ -3,6 +3,7 @@ import { Reveal } from "@/components/animations/reveal";
 import { GlassCard } from "@/components/ui/glass-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { achievements, metrics } from "@/data/portfolio";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -10,8 +11,8 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="About"
-          title="Architecture-Driven .NET Leadership for Enterprise Platforms."
-          description="Hands-on engineering leader specializing in .NET 8, ASP.NET Core, Microservices, Blazor, SQL Server, Cloud Deployment, and AI-assisted software development. Experienced in transforming complex business requirements into scalable and maintainable enterprise platforms."
+          title="Engineering Leadership for Scalable Enterprise Platforms."
+          description="Hands-on engineering leader specializing in .NET 8, ASP.NET Core, C#, Web APIs, microservices, Blazor, SQL Server, and AI-assisted software development. Experienced in transforming complex business requirements into scalable, maintainable, and high-performance enterprise applications."
         />
         <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
           <Reveal>
@@ -19,10 +20,18 @@ export function AboutSection() {
               <div className="absolute inset-8 rounded-lg border border-sky-300/15" />
               <div className="relative flex h-full flex-col justify-end rounded-lg bg-slate-950/35 p-6 backdrop-blur">
                 <div className="flex items-center justify-center">
-                  <img
+                  {/* <img
                     src="/images/VIMAL_PP_PNG.PNG"
                     width="93%"
                     alt="Vimal Kumar"
+                  /> */}
+                  <Image
+                    src="/images/VIMAL_PP_PNG.PNG"
+                    alt="Vimal Kumar"
+                    width={600}
+                    height={750}
+                    className="h-auto w-[93%]"
+                    priority
                   />
                 </div>
                 {/* <p className="text-sm uppercase tracking-[0.32em] text-sky-300">
@@ -40,14 +49,14 @@ export function AboutSection() {
           <div>
             <Reveal>
               <p className="text-lg leading-9 text-slate-300 text-justify">
-                With over 10 years of experience, I have designed and delivered
-                enterprise-grade ERP systems, Learning Management Systems (LMS),
-                government platforms, admin portals, and workflow automation
-                solutions. My expertise includes software architecture, backend
-                engineering, API ecosystems, database optimization, and
-                technical leadership, combining hands-on development with
-                strategic decision-making to deliver scalable, secure, and
-                high-performance applications.
+                With over 10 years of technical experience, I have designed,
+                developed, and delivered enterprise-grade ERP systems, Learning
+                Management Systems (LMS), government platforms, administrative
+                portals, and workflow automation solutions. My experience spans
+                backend engineering, API ecosystems, database optimization,
+                technical leadership, and application architecture, combining
+                hands-on development with engineering decision-making to deliver
+                scalable, secure, and high-performance applications.
               </p>
             </Reveal>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -70,8 +79,9 @@ export function AboutSection() {
             </div>
             <Reveal className="mt-8">
               <a
-                href="/resume/vimal-kumar-resume.pdf"
                 className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10"
+                href="/resume/vimal-kumar-resume.pdf"
+                target="_blank"
               >
                 <Download className="h-4 w-4" />
                 Resume Download

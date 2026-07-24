@@ -36,8 +36,9 @@ export function Hero() {
             Vimal Kumar
           </p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-4xl">
-            AI-Assisted Software Architecture | Microservices | API Engineering
-            | Backend Development | Blazor Development
+            Enterprise .NET Engineering | Backend Development | API Engineering
+            | Technical Leadership | AI-Assisted Development | Solution
+            Architecture
           </h1>
           <p className="mt-6 text-2xl font-medium text-slate-200">
             <TypingTitle />
@@ -61,6 +62,7 @@ export function Hero() {
             <a
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition hover:border-sky-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-sky-300"
               href="/resume/vimal-kumar-resume.pdf"
+              target="_blank"
             >
               <Download className="h-4 w-4" />
               Download Resume
@@ -83,8 +85,11 @@ export function Hero() {
           </div>
           {heroBadges.map((badge, index) => {
             const angle = (index / heroBadges.length) * Math.PI * 2;
-            const left = 50 + Math.cos(angle) * 38;
-            const top = 50 + Math.sin(angle) * 38;
+            // const left = 50 + Math.cos(angle) * 38;
+            // const top = 50 + Math.sin(angle) * 38;
+            // Keep SSR and client-side values identical during hydration
+            const left = (50 + Math.cos(angle) * 38).toFixed(4);
+            const top = (50 + Math.sin(angle) * 38).toFixed(4);
             return (
               <span
                 key={badge}

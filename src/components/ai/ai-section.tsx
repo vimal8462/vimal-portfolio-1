@@ -9,8 +9,8 @@ export function AiSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow="AI Engineering"
-          title="AI as a disciplined engineering workflow, not a shortcut."
-          description="A practical operating model for using Copilot, ChatGPT, prompts, and review loops inside enterprise software delivery."
+          title="AI as a disciplined part of the engineering workflow."
+          description="A practical approach to integrating GitHub Copilot, ChatGPT, prompt engineering, and structured review into enterprise software delivery."
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {aiPractices.map((practice, index) => {
@@ -19,8 +19,12 @@ export function AiSection() {
               <Reveal key={practice.title} delay={index * 0.07}>
                 <GlassCard className="h-full">
                   <Icon className="h-7 w-7 text-sky-300" />
-                  <h3 className="mt-5 text-lg font-semibold text-slate-50">{practice.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">{practice.body}</p>
+                  <h3 className="mt-5 text-lg font-semibold text-slate-50">
+                    {practice.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">
+                    {practice.body}
+                  </p>
                 </GlassCard>
               </Reveal>
             );
