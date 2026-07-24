@@ -9,22 +9,35 @@ export function ArchitectureSection() {
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Architecture"
-          title="A clean path from experience layer to cloud operations."
-          description="An animated system map showing the portfolio's target architecture vocabulary: Next.js UI, gateway boundaries, services, cache, messaging, data, and AWS deployment."
+          title="Engineering systems from interface to infrastructure."
+          description="A practical view of the engineering patterns I use to design scalable applications across frontend, APIs, services, integrations, data, and infrastructure"
         />
         <Reveal>
           <GlassCard className="overflow-hidden">
             <div className="relative mx-auto grid max-w-3xl gap-5">
               {architectureNodes.map((node, index) => {
                 const Icon = node.icon;
+
                 return (
                   <div key={node.label} className="relative">
                     <div className="mx-auto flex max-w-md items-center gap-4 rounded-lg border border-sky-300/20 bg-slate-950/70 p-4 shadow-lg shadow-blue-950/20">
-                      <div className="grid h-11 w-11 place-items-center rounded-lg bg-blue-600/20 text-sky-300">
+                      {/* Icon */}
+                      <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-blue-600/20 text-sky-300">
                         <Icon className="h-5 w-5" />
                       </div>
-                      <span className="font-semibold text-slate-50">{node.label}</span>
+
+                      {/* Content */}
+                      <div className="flex min-w-0 flex-col gap-1">
+                        <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-sky-300">
+                          {node.title}
+                        </span>
+
+                        <span className="font-semibold text-slate-50">
+                          {node.label}
+                        </span>
+                      </div>
                     </div>
+
                     {index < architectureNodes.length - 1 ? (
                       <div className="mx-auto h-8 w-px bg-gradient-to-b from-sky-300 to-blue-600" />
                     ) : null}

@@ -1,4 +1,5 @@
 import {
+  Braces,
   BrainCircuit,
   Cloud,
   Code2,
@@ -9,9 +10,9 @@ import {
   MessageSquareText,
   Network,
   Rocket,
+  Server,
   ServerCog,
   Settings2,
-  ShieldCheck,
   UsersRound,
   Workflow,
 } from "lucide-react";
@@ -22,18 +23,19 @@ export const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Credentials", href: "#credentials" },
-  { label: "AI Lab", href: "#ai" },
+  { label: "AI Engineering", href: "#ai" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const heroBadges = [
-  ".NET 8",
-  "Blazor",
+  ".NET 8 / Core",
+  "Microservices",
+  "Web APIs",
+  "Blazor / React",
   "Clean Architecture",
-  "Database Optimization",
+  "Database Engineering",
   "Payment Gateways",
   "Cloud Deployment",
-  "Node.js | React",
 ];
 
 export const metrics = [
@@ -54,8 +56,8 @@ export const metrics = [
     label: "Enterprise Modules Developed",
   },
   {
-    value: "15+",
-    label: "Modern Frameworks & Technologies",
+    value: "10+",
+    label: "Core Technologies",
   },
   {
     value: "6+",
@@ -73,19 +75,19 @@ export const metrics = [
 
 export const achievements = [
   {
-    title: "Enterprise Architecture",
-    body: "Design scalable ERP, LMS, and government platforms using Clean Architecture, Microservices, and modern .NET technologies.",
-    icon: Layers3,
+    title: "Enterprise Software Engineering",
+    body: "Design and develop scalable ERP, LMS, administrative, and enterprise applications using modern .NET technologies, APIs, microservices, and maintainable engineering practices.",
+    icon: LockKeyhole,
   },
   {
     title: "Engineering Leadership",
-    body: "Lead cross-functional teams through architecture, Agile delivery, code reviews, mentoring, deployment, and release management.",
+    body: "Lead cross-functional teams through technical planning, Agile delivery, code reviews, mentoring, deployment, production support, and release management.",
     icon: Rocket,
   },
   {
-    title: "Secure Software Engineering",
-    body: "Develop secure, high-performance applications with authentication, RBAC, payment integrations, and optimized backend services.",
-    icon: LockKeyhole,
+    title: "Enterprise Architecture",
+    body: "Contribute to application architecture through Clean Architecture, modular design, service boundaries, integration patterns, database design, and scalable backend solutions",
+    icon: Layers3,
   },
 ];
 
@@ -96,13 +98,13 @@ export const experience = [
     period: "Jan 2018 - Jan 2026",
 
     summary:
-      "Led architecture, engineering, modernization, and delivery of enterprise platforms spanning ERP, LMS, government applications, workflow systems, administrative portals, APIs, payment integrations, databases, and cloud-hosted environments.",
+      "Led engineering, technical delivery, modernization, and application architecture across enterprise platforms spanning ERP, LMS, government applications, workflow systems, administrative portals, APIs, payment integrations, databases, and cloud-hosted environments.",
 
     responsibilityGroups: [
       {
-        title: "Architecture & Engineering",
+        title: "Engineering & Architecture",
         items: [
-          "Led end-to-end architecture, development, modernization, and production delivery of enterprise applications using .NET 8, ASP.NET Core, C#, Blazor, REST APIs, Microservices, React, Node.js, and modern architectural practices.",
+          "Led end-to-end engineering, development, modernization, application architecture, and production delivery of enterprise applications using .NET 8, ASP.NET Core, C#, Blazor, REST APIs, microservices, React, Node.js, and modern engineering practices.",
 
           "Designed modular and maintainable application architectures using Clean Architecture, reusable backend services, separation of concerns, SOLID principles, and scalable coding standards.",
 
@@ -111,28 +113,26 @@ export const experience = [
       },
 
       {
-        title: "Technical Leadership",
+        title: "Technical & Team Leadership",
         items: [
           "Translated complex business and stakeholder requirements into scalable technical solutions, application workflows, database models, API contracts, administrative modules, and implementation roadmaps.",
 
-          "Directed cross-functional engineering activities across requirements analysis, solution design, sprint planning, development, code reviews, integration, testing, deployment, and production release management.",
+          "Led engineering planning and sprint execution through Jira, including task planning, prioritization, work distribution, progress tracking, and coordination across development team members.",
 
-          "Managed engineering tasks and sprint execution through Jira, including task planning, prioritization, work distribution, progress tracking, and coordination across development team members.",
+          "Managed collaborative development and source-code versioning workflows using Git and Bitbucket, including branching, code integration, change tracking, and release coordination.",
 
-          "Managed source-code versioning and collaborative development workflows using Git and Bitbucket, including branching, code integration, change tracking, and release coordination.",
-
-          "Conducted code reviews across backend, API, database, Blazor, React, and other application layers to maintain code quality, architectural consistency, security, performance, and maintainability.",
+          "Conducted multi-stack code and architecture reviews across backend, APIs, databases, Blazor, React, and other application layers to maintain coding standards, security, performance, architectural consistency, and maintainability.",
 
           "Conducted technical training and knowledge-sharing sessions for development teams, covering application architecture, coding standards, development practices, tools, and technology adoption.",
 
-          "Established and enforced engineering standards through architecture reviews, multi-stack code reviews, source-control practices, API governance, database standards, performance optimization, and release readiness.",
+          "Established engineering governance across architecture, API design, database practices, development standards, performance optimization, quality assurance, and production readiness.",
         ],
       },
 
       {
-        title: "Data & Security",
+        title: "Data, Security & Integrations",
         items: [
-          "Architected and optimized SQL Server, MySQL, and Azure-hosted databases, including schema design, stored procedures, queries, indexing, and data-access patterns for transactional and reporting workloads.",
+          "Designed and optimized SQL Server, MySQL, and Azure-hosted databases, including schema design, stored procedures, queries, indexing, and data-access patterns for transactional and reporting workloads.",
 
           "Designed secure application and administrative workflows incorporating authentication, authorization, role-based access control (RBAC), validation, configurable permissions, and operational controls.",
 
@@ -141,7 +141,7 @@ export const experience = [
       },
 
       {
-        title: "Platforms & Delivery",
+        title: "Platforms & Production Delivery",
         items: [
           "Led engineering of ERP modules, Learning Management Systems, administrative portals, reporting dashboards, workflow automation, role-based systems, and data-intensive enterprise applications.",
 
@@ -374,45 +374,47 @@ export const skills = [
     category: "Backend",
     items: [
       { name: "C#", level: 85 },
-      { name: ".NET / .NET Core", level: 75 },
-      { name: "Web API", level: 80 },
-      { name: "Database", level: 86 },
+      { name: ".NET / .NET Core", level: 85 },
+      { name: "Web API", level: 85 },
+      { name: "Database", level: 90 },
     ],
   },
   {
     category: "Frontend",
     items: [
-      { name: "Blazor", level: 79 },
-      { name: "React / Next.js", level: 52 },
+      { name: "Blazor", level: 75 },
+      { name: "React / Next.js", level: 45 },
       { name: "Angular", level: 45 },
-      { name: "JavaScript / TypeScript", level: 61 },
+      { name: "JavaScript / TypeScript", level: 40 },
     ],
   },
   {
     category: "Architecture",
     items: [
-      { name: "Clean Architecture", level: 77 },
       { name: "Microservices", level: 80 },
-      { name: "Design Patterns", level: 52 },
+      { name: "Design Patterns", level: 50 },
+      { name: "Clean Architecture", level: 80 },
       { name: "API Architecture", level: 86 },
     ],
   },
   {
     category: "AI Engineering",
     items: [
-      { name: "GitHub Copilot", level: 79 },
-      { name: "ChatGPT", level: 78 },
-      { name: "Prompt Engineering", level: 77 },
-      { name: "AI-Assisted Development", level: 86 },
+      { name: "GitHub Copilot", level: 76 },
+      { name: "ChatGPT", level: 77 },
+      { name: "Prompt Engineering", level: 70 },
+      { name: "AI-Assisted Development", level: 80 },
     ],
   },
 ];
 
 export const projects = [
+  //Project Inclusion (PI) - Sri Aurobindo Group
   {
     name: "Project Inclusion (PI)",
+    organization: "Sri Aurobindo Group",
     description:
-      "A national Sri Aurobindo Group initiative empowering teachers and special educators to identify learning difficulties and support inclusive learning environments across India.",
+      "A nationwide inclusive-education initiative by Sri Aurobindo Society that equips teachers and parents to identify and support children with learning difficulties and neurodevelopmental disorders through structured training, screening, interventions, and digital platforms.",
     tech: [
       ".NET",
       ".NET Core",
@@ -427,19 +429,40 @@ export const projects = [
       "MySQL",
       "AWS",
     ],
-    architecture:
-      "Multi-stack platform with .NET APIs, React/NestJS components, admin workflows, role logic, optimized databases, and cloud/IIS/Linux deployment.",
-    challenge:
-      "Multiple departments needed one scalable system that could support large user activity, inclusive education workflows, admin controls, and clean governance.",
-    solution:
-      "Consolidated requirements, designed scalable technical flows, reviewed .NET/Blazor/React/NestJS code, optimized SQL Server/MySQL/Azure Database structures, and configured admin access logic.",
-    result:
-      "Delivered a national-scale inclusion platform with stronger workflow visibility, scalable backend services, and maintainable multi-stack architecture.",
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Multi-stack platform combining .NET APIs, React/NestJS components, Blazor administration modules, role-based workflows, optimized databases, and cloud and on-premises deployment environments.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Multiple functional teams required a scalable platform capable of supporting high user activity, inclusive education workflows, administrative controls, and structured access governance.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Consolidated requirements, designed scalable application workflows, reviewed .NET, Blazor, React, and NestJS implementations, optimized database structures, and configured role-based administrative access.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Delivered a maintainable national-scale platform with structured workflows, scalable backend services, centralized administration, and improved operational visibility.",
+        ],
+      },
+    ],
   },
+
+  //Learning Management System (LMS) - Sri Aurobindo Group
   {
     name: "Learning Management System (LMS)",
+    organization: "Sri Aurobindo Group",
     description:
-      "A plug-and-play LMS integrated in parallel with Project Inclusion for custom course creation, delivery, and user progress tracking.",
+      "A configurable learning management platform integrated alongside Project Inclusion to support course creation, content delivery, user management, and learning progress tracking.",
     tech: [
       ".NET",
       ".NET Core",
@@ -452,114 +475,585 @@ export const projects = [
       "IIS",
       "Linux",
     ],
-    architecture:
-      "Modular LMS services for courses, users, content, progress tracking, admin panels, and PI platform integration.",
-    challenge:
-      "The LMS needed to integrate smoothly with PI while remaining configurable for course, content, and user management.",
-    solution:
-      "Led API, workflow, and backend service design; built scalable admin panels and database schemas; managed staging-to-production releases.",
-    result:
-      "Enabled course delivery and progress tracking while maintaining uninterrupted rollout cycles and version stability.",
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Modular LMS architecture supporting courses, users, learning content, progress tracking, administration, and integration with the Project Inclusion ecosystem.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "The LMS needed to integrate with Project Inclusion while remaining configurable and independently manageable for courses, content, users, and administrative workflows.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Led API, workflow, backend service, administration, and database design while coordinating staging and production releases.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Established an integrated learning platform supporting structured course delivery, progress tracking, centralized administration, and controlled release management.",
+        ],
+      },
+    ],
   },
+
+  //NCTE Platform - Sri Aurobindo Group
   {
-    name: "NCTE",
+    name: "NCTE Platform",
+    organization: "Sri Aurobindo Group",
     description:
-      "A government-oriented Sri Aurobindo Group application to evaluate and identify top-performing educational institutions based on Ministry scoring parameters.",
+      "An institutional evaluation platform developed to assess educational institutions using defined Ministry scoring parameters and structured evaluation workflows.",
     tech: [".NET", "SQL Server", "Admin Panel", "Reporting", "Workflow Design"],
-    architecture:
-      "Evaluation workflow platform with scoring criteria, backend logic, database structures, admin configuration, and reporting interfaces.",
-    challenge:
-      "Stakeholders needed scoring parameters mapped accurately into application workflows and reliable reporting.",
-    solution:
-      "Gathered requirements, mapped evaluation metrics, developed the full application stack, and optimized platform performance.",
-    result:
-      "Supported institutional evaluation with structured workflows, scoring visibility, and administrative control.",
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Evaluation workflow platform combining scoring criteria, application logic, database structures, administrative configuration, and reporting interfaces.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Complex institutional evaluation parameters needed to be translated accurately into application workflows, scoring rules, and reliable reporting.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Gathered requirements, mapped evaluation parameters into system workflows, developed application modules and database logic, and optimized application performance.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Enabled structured institutional evaluation with configurable scoring workflows, reporting visibility, and centralized administrative control.",
+        ],
+      },
+    ],
   },
+
+  //ZIIEI - Sri Aurobindo Group
+  {
+    name: "ZIIEI",
+    organization: "Sri Aurobindo Group",
+    description:
+      "A nationwide education initiative platform designed to collect and support innovative ideas aimed at improving teaching practices and educational outcomes across India.",
+    tech: ["ASP.NET", "SQL Server", "JavaScript", "jQuery", "CSS"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Web-based education platform supporting idea submission, information management, administrative workflows, and centralized data processing.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "The initiative operated at a national scale and required a centralized platform to support education-improvement ideas and related administrative processes.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Contributed to application development and supporting workflows for managing educational innovation data and platform functionality.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Supported a nationwide digital initiative focused on collecting and managing ideas for improving education.",
+        ],
+      },
+    ],
+  },
+
+  //iGuardian - School ERP - Sri Aurobindo Group
+  {
+    name: "iGuardian - School ERP",
+    organization: "Sri Aurobindo Group",
+    description:
+      "A comprehensive school ERP platform deployed across 20+ schools to manage academic, administrative, attendance, transport, library, examination, fee, and staff operations.",
+    tech: ["ASP.NET", "MySQL", "JavaScript", "jQuery", "CSS", "CoreFTP"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Multi-module school ERP integrating student and staff management, attendance, transport, admissions, library, examinations, fees, reporting, and administrative workflows within a centralized platform.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Multiple schools required a common platform capable of managing diverse academic and administrative processes while supporting institution-specific operational requirements.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Performed new development, application maintenance, interface design, backend development, database management, and deployment across multiple ERP modules.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Supported centralized academic and administrative operations across 20+ schools through an extensible multi-module ERP platform.",
+        ],
+      },
+      {
+        title: "Key Modules",
+        items: [
+          "Student and Staff Management",
+          "Student, Staff, and Employee Attendance",
+          "Transport Management",
+          "Leave Management",
+          "Library Management",
+          "Admission Tracker",
+          "Transfer Certificate (TC) Management",
+          "Seating Arrangement",
+          "Staff Duty and Period Management",
+          "Live Fee Management",
+          "Marks Entry and Report Card Management",
+        ],
+      },
+    ],
+  },
+
+  //Online Fee Portal - Sri Aurobindo Group
+  {
+    name: "Online Fee Portal",
+    organization: "Sri Aurobindo Group",
+    description:
+      "A web-based fee management portal developed to support online school fee-related operations and associated administrative processes.",
+    tech: ["ASP.NET", "MySQL", "JavaScript", "jQuery", "CSS", "CoreFTP"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Web-based fee management application integrating user-facing interfaces, server-side processing, MySQL data management, and deployment workflows.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "School fee processes required a dedicated online platform capable of simplifying fee-related operations and centralized record management.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Designed and developed application functionality, managed database structures, and handled application deployment.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Provided a centralized digital platform for managing online fee-related workflows and administrative records.",
+        ],
+      },
+    ],
+  },
+
+  //Director Reporting Dashboard - Bharat Heavy Electricals Limited (BHEL)
   {
     name: "Director Reporting Dashboard",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
     description:
-      "A BHEL reporting dashboard that gave Directors and senior leaders direct access to real-time reports from departments and production units.",
-    tech: ["ASP.NET", "C#", "MS SQL Server", "MIS Reporting", "Dashboard UI"],
-    architecture:
-      "Reporting web application with department data sources, KPI views, admin access modules, and performance-tuned backend workflows.",
-    challenge:
-      "Leadership needed direct, fast access to department and production-unit reporting, including Proposed vs Actual Saving views.",
-    solution:
-      "Interacted with department heads, defined KPIs and data sources, built the web framework, and tuned backend retrieval.",
-    result:
-      "Accelerated leadership decision cycles through high-speed data access and intuitive visualization.",
+      "A management reporting platform providing Directors and senior leadership with centralized access to departmental and production-unit reports.",
+    tech: ["ASP.NET", "C#", "SQL Server", "MIS Reporting", "Dashboard UI"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Reporting web application integrating departmental data sources, management reports, KPI views, administrative access, and optimized database retrieval.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Leadership required centralized and timely access to operational and departmental reporting without relying on fragmented reporting processes.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Collaborated with departmental stakeholders, mapped reporting requirements and data sources, developed reporting modules, and optimized backend data retrieval.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Improved management access to operational information through centralized reporting, structured dashboards, and streamlined data retrieval.",
+        ],
+      },
+    ],
   },
+
+  //IT & HR Helpdesk - Bharat Heavy Electricals Limited (BHEL)
   {
     name: "IT & HR Helpdesk",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
     description:
-      "A unified BHEL helpdesk system to automate IT hardware requests and HR service workflows across departments.",
+      "An enterprise helpdesk platform developed to automate IT hardware requests and HR service workflows across departments.",
     tech: [
       "ASP.NET",
       "C#",
-      "MS SQL Server",
+      "SQL Server",
       "Workflow Routing",
       "Status Tracking",
     ],
-    architecture:
-      "Ticket lifecycle services with role queues, escalation rules, and notification hooks.",
-    challenge:
-      "HR and IT requests needed documented approval hierarchies, process dependencies, and reliable ownership.",
-    solution:
-      "Designed ticket creation, workflow routing, status tracking, optimized database structures, and efficient backend processing.",
-    result:
-      "Improved request handling, ticket resolution efficiency, and process visibility across IT and HR operations.",
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Workflow-driven helpdesk platform supporting request lifecycles, role-based queues, routing, status management, and administrative tracking.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "IT and HR service requests required structured ownership, approval workflows, status visibility, and centralized tracking.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Developed request creation, workflow routing, status tracking, database structures, and backend processing for departmental service workflows.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Streamlined request handling and provided improved visibility into IT and HR service workflows and request status.",
+        ],
+      },
+    ],
   },
+
+  //Visitor Gate Pass System - Bharat Heavy Electricals Limited (BHEL)
   {
-    name: "Visitor Gate Pass",
+    name: "Visitor Gate Pass System",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
     description:
-      "A BHEL user-facing visitor management portal supporting administrative convenience and secure visit tracking.",
-    tech: ["ASP.NET", "C#", "MS SQL Server", "Portal UI", "Security"],
-    architecture:
-      "Gate operations module connected to approval, visitor logs, and host communication.",
-    challenge:
-      "Security teams needed speed at entry points while maintaining accurate records.",
-    solution:
-      "Built streamlined capture forms, approval states, and searchable visit history.",
-    result: "Improved front-desk throughput and strengthened audit readiness.",
+      "An internal visitor management portal developed to support visitor registration, approval workflows, gate operations, and visit tracking.",
+    tech: ["ASP.NET", "C#", "SQL Server", "JavaScript", "jQuery", "Bootstrap"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Visitor management application connecting registration, approval workflows, visitor records, gate operations, and administrative tracking.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Gate and administrative teams required an efficient process for recording visitors while maintaining accurate and searchable visit information.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Developed visitor registration forms, approval workflows, database records, administrative functionality, and searchable visit history.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Digitized visitor registration and tracking while improving administrative visibility and record accessibility.",
+        ],
+      },
+    ],
+  },
+
+  //Online Quiz Portal - Bharat Heavy Electricals Limited (BHEL)
+  {
+    name: "Online Quiz Portal",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
+    description:
+      "An internal web-based quiz platform developed to support online assessments and employee engagement activities.",
+    tech: ["ASP.NET", "C#", "SQL Server", "JavaScript", "jQuery", "Bootstrap"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Web-based assessment application supporting quiz configuration, user participation, response processing, scoring, and result management.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "The organization required a centralized digital mechanism for conducting quizzes and managing participant responses and results.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Developed quiz interfaces, backend processing, database structures, scoring logic, and result-management functionality.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Enabled structured online quiz administration and centralized management of participation and results.",
+        ],
+      },
+    ],
+  },
+
+  //Finance Proposed & Actual Saving - Bharat Heavy Electricals Limited (BHEL)
+  {
+    name: "Finance Proposed & Actual Saving",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
+    description:
+      "A financial reporting application developed for the Finance Department to manage proposed budgets and compare them with actual savings and losses for a financial year.",
+    tech: ["ASP.NET", "SQL Server"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Finance-focused web application combining budget data capture, financial calculations, SQL Server data management, and proposed-versus-actual reporting.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "The Finance Department required a structured mechanism to record proposed financial figures and compare them with actual savings and losses across a financial year.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Gathered requirements, coordinated with stakeholders, designed and developed the application, and managed the underlying database structures.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Centralized proposed-versus-actual financial information and provided clearer visibility into annual savings and losses.",
+        ],
+      },
+    ],
+  },
+
+  //Services Dashboard - Bharat Heavy Electricals Limited (BHEL)
+  {
+    name: "Services Dashboard",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
+    description:
+      "An internal BHEL dashboard developed to centralize service-related operational information and reporting.",
+    tech: ["ASP.NET", "SQL Server"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Internal dashboard application designed around centralized service information, database-driven reporting, and departmental access.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Service-related operational information required a centralized interface for easier access and management reporting.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Contributed to the development and maintenance of the dashboard and its supporting database-driven functionality.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Provided a centralized dashboard for accessing and reviewing service-related operational information.",
+        ],
+      },
+    ],
+  },
+
+  //Engineering Dashboard - Bharat Heavy Electricals Limited (BHEL)
+  {
+    name: "Engineering Dashboard",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
+    description:
+      "An engineering application developed to support drawing-related calculations, blueprint management, measurement submission, cost estimation, and work-hour calculations.",
+    tech: ["ASP.NET", "SQL Server"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Engineering workflow application combining drawing and blueprint management, measurement processing, calculation logic, and centralized database storage.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Engineering teams relied on manual processes for drawing calculations, blueprint handling, measurements, cost calculations, and work-hour estimation.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Developed workflows for blueprint uploads, drawing measurements, calculation processing, cost measurement, and work-hour management.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Reduced dependency on manual engineering calculations and centralized drawing-related information and measurement workflows.",
+        ],
+      },
+    ],
+  },
+
+  //Project Group (PG) Portal - Bharat Heavy Electricals Limited (BHEL)
+  {
+    name: "Project Group (PG) Portal",
+    organization: "Bharat Heavy Electricals Limited (BHEL)",
+    description:
+      "A large internal project management portal developed to replace fragmented Excel-based project tracking with a centralized platform for multiple BHEL project groups.",
+    tech: ["ASP.NET", "SQL Server", "JavaScript", "jQuery", "CSS"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "Large-scale internal portal with 300+ pages covering project data entry, modification workflows, summary views, database management, and multi-level reporting.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Multiple project groups maintained project information independently in Excel files, making centralized tracking, reporting, and maintenance difficult.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Gathered requirements, coordinated with project groups, designed and developed centralized project workflows, implemented database structures and multi-level reports, and supported deployment.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Replaced fragmented spreadsheet-based tracking with a centralized project information platform, improving maintainability and cross-group reporting.",
+        ],
+      },
+    ],
+  },
+
+  //VedIPE - Tech Code Solutions
+  {
+    name: "VedIPE",
+    organization: "Tech Code Solutions",
+    description:
+      "A web application supported during the early stage of my software development career, involving application maintenance, backend enhancements, database queries, and frontend improvements.",
+    tech: ["ASP.NET", "C#", "MySQL", "HTML", "CSS", "JavaScript", "jQuery"],
+    projectDetails: [
+      {
+        title: "Architecture",
+        items: [
+          "ASP.NET web application with server-side business logic, MySQL data access, and browser-based user interfaces.",
+        ],
+      },
+      {
+        title: "Challenge",
+        items: [
+          "Existing application modules required ongoing maintenance, defect resolution, and incremental functional improvements.",
+        ],
+      },
+      {
+        title: "Solution",
+        items: [
+          "Supported application enhancements, updated backend logic, optimized database queries, resolved defects, and implemented frontend improvements.",
+        ],
+      },
+      {
+        title: "Result",
+        items: [
+          "Contributed to application stability, usability, and incremental feature delivery while building foundational professional development experience.",
+        ],
+      },
+    ],
   },
 ];
 
 export const architectureNodes = [
-  { label: "Blazor / React / Next.js", icon: Code2 },
-  { label: ".NET 8 API Gateway", icon: Network },
-  { label: "Microservices + Modular Services", icon: ServerCog },
-  { label: "Integrations + Payment Gateways", icon: GitBranch },
-  { label: "SQL Server / MySQL / Azure DB", icon: Database },
-  { label: "AWS / IIS / Plesk / Linux", icon: Cloud },
+  { title: "PRESENTATION", label: "Blazor / React / Next.js", icon: Code2 },
+  {
+    title: "API LAYER",
+    label: ".NET 8 / ASP.NET Core Web APIs",
+    icon: Network,
+  },
+  {
+    title: "APPLICATION & SERVICES",
+    label: "Microservices / Modular Services",
+    icon: ServerCog,
+  },
+  {
+    title: "INTEGRATIONS",
+    label: "External Integrations / Payment Gateways",
+    icon: GitBranch,
+  },
+  {
+    title: "DATA",
+    label: "SQL Server / MySQL / Cosmos DB / MongoDB",
+    icon: Database,
+  },
+  {
+    title: "INFRASTRUCTURE",
+    label: "AWS / IIS / Linux / On-Premises",
+    icon: Cloud,
+  },
 ];
 
 export const aiPractices = [
   {
     title: "GitHub Copilot",
-    body: "Accelerates boilerplate, unit-test scaffolds, refactors, and API integration work while keeping senior review in the loop.",
+    body: "Accelerates code generation, unit-test scaffolding, refactoring, and API integration while keeping engineering review and validation in the loop.",
     icon: Code2,
   },
   {
     title: "ChatGPT",
-    body: "Supports discovery notes, architecture alternatives, debugging hypotheses, and stakeholder-friendly documentation.",
+    body: "Supports technical exploration, architecture evaluation, debugging, documentation, and structured problem-solving across the development lifecycle.",
     icon: MessageSquareText,
   },
   {
     title: "Prompt Engineering",
-    body: "Creates reusable prompts for code review, SQL tuning, user-story breakdowns, and release checklists.",
+    body: "Creates structured and reusable prompts for code review, SQL optimization, requirement analysis, debugging, documentation, and development workflows.",
     icon: BrainCircuit,
   },
   {
     title: "Enterprise AI Workflow",
-    body: "Balances speed with privacy, validation, source control, and human ownership for production systems.",
+    body: "Integrates AI-assisted development with code review, validation, source control, security considerations, and human ownership for production systems.",
     icon: Workflow,
   },
 ];
 
 export const certifications = [
-  { title: "Programming in C - NIIT", icon: Code2 },
-  { title: "Object-Oriented Programming Using C++ - NIIT", icon: ShieldCheck },
-  { title: "Introduction - Cloud Computing - NIIT", icon: Cloud },
+  {
+    title: "Software Engineering - NIIT",
+    icon: Code2,
+  },
+  {
+    title: "Virtualization Towards a Greener IT Infrastructure - NIIT",
+    icon: Server,
+  },
+  {
+    title: "Programming in C - NIIT",
+    icon: Code2,
+  },
+  {
+    title: "Object-Oriented Programming Using C++ - NIIT",
+    icon: Braces,
+  },
+  {
+    title: "Introduction - Cloud Computing - NIIT",
+    icon: Cloud,
+  },
 ];
 
 export const education = [
@@ -578,39 +1072,39 @@ export const education = [
 
 export const coreCompetencies = [
   ".NET 8 / .NET Core backend engineering and API ecosystem development",
-  "Database and performance optimization across SQL Server, Azure Database, and MySQL",
-  "RESTful API design, integration services, modular architecture, and microservices readiness",
+  "Database engineering and performance optimization across SQL Server, Azure SQL Database, and MySQL",
+  "RESTful API design, integration services, modular architecture, and microservices",
   "Scalable ERP system design, admin panels, LMS modules, and multi-module platform delivery",
-  "Technical project leadership across SDLC, architecture reviews, code governance, and deployment",
-  "Payment gateway integrations with Razorpay and PayU",
+  "Technical project leadership across the SDLC, architecture reviews, code governance, and deployment",
+  "Payment gateway integration with Razorpay and PayU",
 ];
 
 export const highlights = [
   {
     title: "Scalable REST APIs",
-    body: "Designed and deployed API ecosystems that supported user growth while keeping system availability and maintainability in focus.",
+    body: "Designed and deployed scalable API ecosystems with a focus on performance, availability, maintainability, and seamless system integration.",
     icon: Network,
   },
   {
     title: "Database Performance",
-    body: "Optimized SQL Server and MySQL structures, stored procedures, and reporting queries to reduce transaction load and improve reporting efficiency.",
+    body: "Optimized SQL Server and MySQL databases, stored procedures, queries, and reporting workflows to improve application performance and data retrieval efficiency.",
     icon: Database,
   },
   {
     title: "Agile Team Leadership",
-    body: "Directed cross-functional Agile teams through sprint execution, architecture validation, release management, and production defect reduction.",
+    body: "Led cross-functional Agile teams across sprint planning and execution, architecture reviews, code quality, release management, and production support.",
     icon: UsersRound,
   },
   {
-    title: "ERP and Admin Platforms",
-    body: "Built high-availability ERP modules and secure admin panels that automated manual processes across departments.",
+    title: "ERP & Admin Platforms",
+    body: "Designed and delivered scalable ERP modules and secure administrative platforms that streamlined business processes across multiple departments.",
     icon: Settings2,
   },
 ];
 
 export const softSkills = [
   "Strategic & Executive Communication",
-  "Stakeholder Management",
+  "Stakeholder & Client Engagement",
   "Cross-Functional Leadership",
   "Adaptability & Continuous Learning",
   "Client Relationship Management",
@@ -685,7 +1179,7 @@ export const techCloud = [
   },
 
   {
-    category: "DevOps & Infrastructure",
+    category: "DEVOPS, DEPLOYMENT & INFRASTRUCTURE",
     items: [
       "Git",
       "Bitbucket",
@@ -723,7 +1217,7 @@ export const techCloud = [
   },
 
   {
-    category: "Soft Skills",
+    category: "LEADERSHIP & PROFESSIONAL SKILLS",
     items: softSkills,
   },
 ];
