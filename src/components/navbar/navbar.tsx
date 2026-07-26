@@ -36,7 +36,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-300"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-300 hover:-translate-y-1"
             >
               {item.label}
             </a>

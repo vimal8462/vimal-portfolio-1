@@ -26,7 +26,7 @@ export function CertificationsSection() {
                 {education.map((item) => (
                   <div
                     key={`${item.title}-${item.year}`}
-                    className="rounded-lg border border-white/10 bg-white/5 p-4"
+                    className="rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-sky-300/50 hover:bg-white/[0.03] hover:-translate-y-1"
                   >
                     <p className="font-semibold text-slate-50">{item.title}</p>
                     <p className="mt-1 text-sm text-slate-300">
@@ -52,7 +52,7 @@ export function CertificationsSection() {
                   return (
                     <div
                       key={cert.title}
-                      className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4"
+                      className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 p-4 transition hover:border-sky-300/50 hover:bg-white/[0.03] hover:-translate-y-1"
                     >
                       <Icon className="h-5 w-5 shrink-0 text-sky-300" />
                       <p className="text-sm font-semibold leading-6 text-slate-100">
@@ -71,7 +71,7 @@ export function CertificationsSection() {
             const Icon = item.icon;
             return (
               <Reveal key={item.title} delay={index * 0.06}>
-                <GlassCard className="h-full">
+                <GlassCard className="h-full hover:-translate-y-1 transition hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50">
                   <Icon className="h-7 w-7 text-sky-300" />
                   <h3 className="mt-5 text-lg font-semibold text-slate-50">
                     {item.title}
@@ -95,7 +95,7 @@ export function CertificationsSection() {
                 {coreCompetencies.map((competency) => (
                   <div
                     key={competency}
-                    className="flex gap-3 text-sm leading-6 text-slate-300"
+                    className="flex gap-3 text-sm leading-6 text-slate-300 transition hover:-translate-y-1 hover:text-sky-100 hover:bg-blue-500/10 hover:border-sky-300/50 rounded-lg border border-white/10 bg-white/5 p-4"
                   >
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-300" />
                     <span>{competency}</span>
@@ -114,7 +114,7 @@ export function CertificationsSection() {
                 {softSkills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-sky-300/20 bg-slate-950/70 px-4 py-2 text-sm text-slate-200"
+                    className="rounded-lg border border-sky-300/20 bg-slate-950/70 px-4 py-2 text-sm text-slate-200 hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100  hover:bg-blue-500/10 transition"
                   >
                     {skill}
                   </span>

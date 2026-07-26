@@ -53,14 +53,14 @@ export function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 backdrop-blur transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-sky-300"
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 backdrop-blur transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-sky-300 hover:-translate-y-1"
               href="#projects"
             >
               <Send className="h-4 w-4 transition group-hover:translate-x-0.5" />
               View Projects
             </a>
             <a
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition hover:border-sky-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-sky-300"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-50 backdrop-blur transition hover:border-sky-200 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-sky-300 hover:-translate-y-1 "
               href="/resume/vimal-kumar-resume.pdf"
               target="_blank"
             >
@@ -93,7 +93,7 @@ export function Hero() {
             return (
               <span
                 key={badge}
-                className="absolute -translate-x-1/2 -translate-y-1/2 rounded-lg border border-sky-300/25 bg-slate-900/75 px-4 py-2 text-xs font-semibold text-sky-100 shadow-lg shadow-blue-950/30 backdrop-blur"
+                className="absolute -translate-x-1/2 -translate-y-1/2 rounded-lg border border-sky-300/25 bg-slate-900/75 px-4 py-2 text-xs font-semibold text-sky-100 shadow-lg shadow-blue-950/30 backdrop-blur hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100  hover:bg-blue-500/10 transition"
                 style={{ left: `${left}%`, top: `${top}%` }}
               >
                 {badge}

@@ -64,7 +64,7 @@ export function AboutSection() {
                 const Icon = item.icon;
                 return (
                   <Reveal key={item.title} delay={index * 0.07}>
-                    <GlassCard className="h-full">
+                    <GlassCard className="h-full hover:-translate-y-1 transition hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50">
                       <Icon className="h-6 w-6 text-sky-300" />
                       <h3 className="mt-4 font-semibold text-slate-50">
                         {item.title}
@@ -79,7 +79,7 @@ export function AboutSection() {
             </div>
             <Reveal className="mt-8">
               <a
-                className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10"
+                className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50"
                 href="/resume/vimal-kumar-resume.pdf"
                 target="_blank"
               >
@@ -91,26 +91,22 @@ export function AboutSection() {
                 href="https://www.linkedin.com/in/vimalkrs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10 ml-4"
+                className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10 ml-4 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50"
               >
                 <Download className="h-4 w-4" />
                 LinkedIn Profile
               </a>
-              {/* <div className="mt-4 text-md text-slate-300">
-                ERP • LMS • Government Platforms • Workflow Automation • Payment
-                Systems • Enterprise APIs
-              </div> */}
             </Reveal>
           </div>
 
           <div className="col-sm-12 mt-4 grid gap-4 md:col-span-2 md:grid-cols-4">
             {metrics.map((metric, index) => (
               <Reveal key={metric.label} delay={index * 0.06}>
-                <GlassCard className="h-full">
-                  <p className="text-4xl font-semibold text-sky-300">
+                <GlassCard className="h-full hover:-translate-y-1 transition hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50">
+                  <p className="text-4xl font-semibold text-sky-300 flex items-center justify-center">
                     {metric.value}
                   </p>
-                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                  <p className="mt-3 text-sm leading-6 text-slate-300 flex items-center justify-center">
                     {metric.label}
                   </p>
                 </GlassCard>
