@@ -90,7 +90,7 @@ export function ExperienceTimeline() {
                                   {group.items.map((responsibility, index) => (
                                     <div
                                       key={responsibility}
-                                      className="group flex gap-4 rounded-xl border border-transparent px-3 py-3 transition hover:border-white/10 hover:bg-white/[0.03]"
+                                      className="group flex gap-4 rounded-xl border border-transparent px-3 py-3 transition hover:border-sky-300/50 hover:bg-white/[0.03]"
                                     >
                                       <span className="shrink-0 font-mono text-xs font-semibold text-sky-300/60">
                                         {String(index + 1).padStart(2, "0")}

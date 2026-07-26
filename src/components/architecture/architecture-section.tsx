@@ -20,7 +20,7 @@ export function ArchitectureSection() {
 
                 return (
                   <div key={node.label} className="relative">
-                    <div className="mx-auto flex max-w-md items-center gap-4 rounded-lg border border-sky-300/20 bg-slate-950/70 p-4 shadow-lg shadow-blue-950/20">
+                    <div className="mx-auto flex max-w-md items-center gap-4 rounded-lg border border-sky-300/20 bg-slate-950/70 p-4 shadow-lg shadow-blue-950/20 backdrop-blur transition hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50">
                       {/* Icon */}
                       <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-blue-600/20 text-sky-300">
                         <Icon className="h-5 w-5" />

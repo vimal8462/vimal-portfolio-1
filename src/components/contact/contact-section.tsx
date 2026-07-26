@@ -111,7 +111,8 @@ export function ContactSection() {
                     <a
                       key={link.label}
                       href={link.href}
-                      className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 transition hover:border-sky-300/40 hover:text-sky-200"
+                      target="_blank"
+                      className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-slate-200 transition hover:border-sky-300/40 hover:text-sky-200 hover:bg-blue-500/10 hover:-translate-y-1"
                     >
                       <Icon className="h-4 w-4" />
                       {link.label} - {link.href.replace(/^(mailto:|tel:)/, "")}

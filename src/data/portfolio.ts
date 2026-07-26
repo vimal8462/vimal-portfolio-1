@@ -41,7 +41,7 @@ export const heroBadges = [
 export const metrics = [
   {
     value: "10+",
-    label: "Years of Enterprise Software Engineering",
+    label: "Years of Software Engineering",
   },
   {
     value: "100+",
