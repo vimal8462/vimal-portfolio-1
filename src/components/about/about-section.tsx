@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 import { Reveal } from "@/components/animations/reveal";
 import { GlassCard } from "@/components/ui/glass-card";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -12,7 +12,7 @@ export function AboutSection() {
         <SectionHeading
           eyebrow="About"
           title="Engineering Leadership for Scalable Enterprise Platforms."
-          description="Hands-on engineering leader specializing in .NET 8, ASP.NET Core, C#, Web APIs, microservices, Blazor, SQL Server, and AI-assisted software development. Experienced in transforming complex business requirements into scalable, maintainable, and high-performance enterprise applications."
+          description="Hands-on engineering leader specializing in .NET 10, ASP.NET Core, C#, Web APIs, microservices, Blazor, SQL Server, and AI-assisted software development. Experienced in transforming complex business requirements into scalable, maintainable, and high-performance enterprise applications."
         />
         <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
           <Reveal>
@@ -91,9 +91,9 @@ export function AboutSection() {
                 href="https://www.linkedin.com/in/vimalkrs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center gap-2 rounded-lg border border-sky-300/35 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10 ml-4 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50"
+                className="inline-flex min-h-12 items-center gap-2 rounded-lg border bg-blue-600 px-5 py-3 text-sm font-semibold text-slate-50 transition hover:bg-white/10 ml-4 hover:-translate-y-1 hover:shadow-lg hover:shadow-sky-950/40 hover:border-sky-300/50"
               >
-                <Download className="h-4 w-4" />
+                <ExternalLink className="h-4 w-4" />
                 LinkedIn Profile
               </a>
             </Reveal>
