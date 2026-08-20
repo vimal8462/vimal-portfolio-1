@@ -14,36 +14,80 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vimal-portfolio.vercel.app"),
+  // metadataBase: new URL("https://vimal-portfolio.vercel.app"),
+  metadataBase: new URL("https://vimal.itdivine.com"),
   title: {
-    default: "Vimal Kumar | Manager - Software Development",
+    default:
+      "Vimal Kumar | Senior .NET Engineer & Software Development Manager",
     template: "%s | Vimal Kumar",
   },
   description:
-    "Premium engineering portfolio for Vimal Kumar, a Manager - Software Development and Senior .NET Engineering Professional with 11+ years building .NET 8, API, ERP, LMS, dashboards, workflows, and AI-assisted software delivery.",
+    "Vimal Kumar is a Senior .NET Engineer and Software Development Manager with 10+ years of experience in enterprise software, .NET, API engineering, ERP, LMS, solution architecture, technical leadership, and AI-assisted development",
   keywords: [
     "Vimal Kumar",
-    "Manager Software Development",
+    "Vimal Kumar .NET Engineer",
+    "Vimal Kumar Software Development Manager",
     "Senior .NET Engineer",
+    "Software Development Manager",
+    ".NET Engineer India",
     ".NET 8",
+    "ASP.NET Core",
+    "Web API",
+    "REST API",
     "Blazor",
-    "Next.js portfolio",
-    "Enterprise software",
-    "AI-assisted development",
+    "Microservices",
+    "Enterprise Software",
+    "Solution Architecture",
+    "Technical Leadership",
+    "AI-Assisted Development",
+    "ERP Software",
+    "LMS Software",
   ],
-  authors: [{ name: "Vimal Kumar" }],
-  openGraph: {
-    title: "Vimal Kumar | Manager - Software Development",
-    description:
-      "Enterprise .NET software, API architecture, ERP, LMS, dashboards, workflow platforms, and AI-assisted engineering.",
-    url: "https://vimal-portfolio.vercel.app",
-    siteName: "Vimal Kumar Portfolio",
-    locale: "en_US",
-    type: "website",
+  authors: [{ name: "Vimal Kumar", url: "https://vimal.itdivine.com" }],
+  creator: "Vimal Kumar",
+  publisher: "Vimal Kumar",
+  alternates: {
+    canonical: "https://vimal.itdivine.com",
   },
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    // url: "https://vimal-portfolio.vercel.app",
+    url: "https://vimal.itdivine.com",
+    siteName: "Vimal Kumar | Software Engineering Portfolio",
+    title: "Vimal Kumar | Senior .NET Engineer & Software Development Manager",
+    description:
+      "Portfolio of Vimal Kumar — Senior .NET Engineer and Software Development Manager specializing in enterprise .NET, API engineering, ERP, LMS, solution architecture, technical leadership, and AI-assisted development.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vimal Kumar — Senior .NET Engineer & Software Development Manager",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Vimal Kumar | Senior .NET Engineer & Software Development Manager",
+    description:
+      "Senior .NET Engineer and Software Development Manager specializing in enterprise software, APIs, architecture, ERP, LMS, and AI-assisted development.",
+    images: ["/og-image.jpg"],
+  },
+  category: "technology",
+
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 

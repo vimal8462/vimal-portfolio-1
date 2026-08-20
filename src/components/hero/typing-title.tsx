@@ -3,11 +3,12 @@
 import { useEffect, useMemo, useState } from "react";
 
 const phrases = [
-  "Software Development Manager",
-  ".NET 8 & API Architect",
-  "Blazor & React Engineer",
+  "Senior Software Engineer",
   "Technical Leadership",
-  "AI-Driven Engineering ",
+  "Expertise in .NET 10 | C# | Microservices | Web APIs",
+  "Microservices & Web APIs Architect",
+  "Blazor & React Engineer",
+  "AI-Assisted Engineering ",
 ];
 
 export function TypingTitle() {

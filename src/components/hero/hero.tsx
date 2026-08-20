@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowDown, Download, Send } from "lucide-react";
+import { Activity, ArrowDown, Download, Send } from "lucide-react";
 import { heroBadges } from "@/data/portfolio";
 import { ParticleField } from "./particle-field";
 import { TypingTitle } from "./typing-title";
@@ -36,20 +36,20 @@ export function Hero() {
             Vimal Kumar
           </p>
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-4xl">
-            Enterprise .NET Engineering | Backend Development | API Engineering
-            | Technical Leadership | AI-Assisted Development | Solution
-            Architecture
+            {/* .NET Engineering | API Engineering | Technical Leadership |
+            AI-Assisted Development | Solution Architecture */}
+            .NET Engineering | Technical Leadership | Solution Architecture
           </h1>
           <p className="mt-6 text-2xl font-medium text-slate-200">
             <TypingTitle />
           </p>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 text-justify">
             Senior .NET Engineer and technical leader with 10+ years of
             experience designing and delivering scalable enterprise
-            applications. Expertise in .NET 8, ASP.NET Core, C#, Blazor, Web
-            APIs, Microservices, SQL Server, and AI-assisted software
+            applications. Expertise in .NET 10, ASP.NET Core, C#, Blazor, Web
+            APIs, Microservices, SQL Server, NoSql, and AI-assisted software
             development, with a strong focus on clean architecture, performance,
-            and business impact.
+            security, and maintainability in the business impact.
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
@@ -66,6 +66,13 @@ export function Hero() {
             >
               <Download className="h-4 w-4" />
               Download Resume
+            </a>
+            <a
+              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 backdrop-blur transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-sky-300 hover:-translate-y-1"
+              href="#skills"
+            >
+              <Activity className="h-4 w-4 " />
+              Skills & Expertise
             </a>
           </div>
         </motion.div>
@@ -94,7 +101,7 @@ export function Hero() {
               <span
                 key={badge}
                 className="absolute -translate-x-1/2 -translate-y-1/2 rounded-lg border border-sky-300/25 bg-slate-900/75 px-4 py-2 text-xs font-semibold text-sky-100 shadow-lg shadow-blue-950/30 backdrop-blur hover:-translate-y-1 hover:border-sky-300/50 hover:text-sky-100  hover:bg-blue-500/10 transition"
-                style={{ left: `${left}%`, top: `${top}%` }}
+                style={{ left: `${left}%`, top: `${top}%`, width: "100px" }}
               >
                 {badge}
               </span>

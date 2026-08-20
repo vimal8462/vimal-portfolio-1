@@ -28,7 +28,7 @@ export const navItems = [
 ];
 
 export const heroBadges = [
-  ".NET 8 / Core",
+  ".NET 10",
   "Microservices",
   "Web APIs",
   "Blazor / React",
@@ -48,11 +48,11 @@ export const metrics = [
     label: "REST APIs & Backend Services",
   },
   {
-    value: "20+",
+    value: "15+",
     label: "Enterprise Applications Delivered",
   },
   {
-    value: "15+",
+    value: "20+",
     label: "Enterprise Modules Developed",
   },
   {
@@ -104,7 +104,7 @@ export const experience = [
       {
         title: "Engineering & Architecture",
         items: [
-          "Led end-to-end engineering, development, modernization, application architecture, and production delivery of enterprise applications using .NET 8, ASP.NET Core, C#, Blazor, REST APIs, microservices, React, Node.js, and modern engineering practices.",
+          "Led end-to-end engineering, development, modernization, application architecture, and production delivery of enterprise applications using .NET 10, ASP.NET Core, C#, Blazor, REST APIs, microservices, React, Node.js, and modern engineering practices.",
 
           "Designed modular and maintainable application architectures using Clean Architecture, reusable backend services, separation of concerns, SOLID principles, and scalable coding standards.",
 
@@ -167,6 +167,7 @@ export const experience = [
     ],
 
     technologies: [
+      ".NET 10",
       ".NET 8",
       "ASP.NET Core",
       "ASP.NET Framework",
@@ -182,6 +183,7 @@ export const experience = [
       "NestJS",
       "SQL Server",
       "MySQL",
+      "NoSQL",
       "Azure SQL",
       "AWS",
       "Linux",
@@ -985,7 +987,7 @@ export const architectureNodes = [
   { title: "PRESENTATION", label: "Blazor / React / Next.js", icon: Code2 },
   {
     title: "API LAYER",
-    label: ".NET 8 / ASP.NET Core Web APIs",
+    label: ".NET 10 / ASP.NET Core Web APIs",
     icon: Network,
   },
   {
@@ -1071,7 +1073,7 @@ export const education = [
 ];
 
 export const coreCompetencies = [
-  ".NET 8 / .NET Core backend engineering and API ecosystem development",
+  ".NET 10 / .NET Core backend engineering and API ecosystem development",
   "Database engineering and performance optimization across SQL Server, Azure SQL Database, and MySQL",
   "RESTful API design, integration services, modular architecture, and microservices",
   "Scalable ERP system design, admin panels, LMS modules, and multi-module platform delivery",
@@ -1117,6 +1119,7 @@ export const techCloud = [
     items: [
       "C#",
       "ASP.NET",
+      ".NET 10",
       ".NET 8",
       ".NET 6",
       "ASP.NET MVC",
