@@ -132,7 +132,7 @@ export const experience = [
       {
         title: "Data, Security & Integrations",
         items: [
-          "Designed and optimized SQL Server, MySQL, and Azure-hosted databases, including schema design, stored procedures, queries, indexing, and data-access patterns for transactional and reporting workloads.",
+          "Designed and optimized SQL Server, MySQL, and Azure SQL databases, including schema design, stored procedures, queries, indexing, and data-access patterns for transactional and reporting workloads.",
 
           "Designed secure application and administrative workflows incorporating authentication, authorization, role-based access control (RBAC), validation, configurable permissions, and operational controls.",
 
@@ -184,8 +184,8 @@ export const experience = [
       "SQL Server",
       "MySQL",
       "NoSQL",
-      "Azure SQL",
-      "AWS",
+      "Azure(Docker, K8, Service Bus)",
+      "AWS (S3, IAM)",
       "Linux",
       "IIS",
       "Plesk",
@@ -429,7 +429,7 @@ export const projects = [
       "Blazor",
       "SQL Server",
       "MySQL",
-      "AWS",
+      "AWS(S3, IAM)",
     ],
     projectDetails: [
       {
@@ -473,7 +473,7 @@ export const projects = [
       "Clean Architecture",
       "Blazor",
       "SQL Server",
-      "AWS",
+      "AWS(S3, IAM)",
       "IIS",
       "Linux",
     ],
@@ -1002,7 +1002,7 @@ export const architectureNodes = [
   },
   {
     title: "DATA",
-    label: "SQL Server / MySQL / Cosmos DB / MongoDB",
+    label: "SQL Server / MySQL / Azure SQL / MongoDB",
     icon: Database,
   },
   {
@@ -1163,7 +1163,7 @@ export const techCloud = [
       "SQL Server",
       "MySQL",
       "MongoDB",
-      "Cosmos DB",
+      "Azuew SQL",
       "Stored Procedures",
       "SQL Functions",
       "Database Optimization",
@@ -1188,7 +1188,7 @@ export const techCloud = [
       "Bitbucket",
       "IIS",
       "Plesk",
-      "AWS",
+      "AWS(S3, IAM)",
       "Linux",
       "On-Premises Infrastructure",
     ],

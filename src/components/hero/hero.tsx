@@ -38,7 +38,7 @@ export function Hero() {
           <h1 className="mt-5 max-w-4xl text-4xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-4xl">
             {/* .NET Engineering | API Engineering | Technical Leadership |
             AI-Assisted Development | Solution Architecture */}
-            .NET Engineering | Technical Leadership | Solution Architecture
+            .NET Engineering | Technical Leadership
           </h1>
           <p className="mt-6 text-2xl font-medium text-slate-200">
             <TypingTitle />
