@@ -116,7 +116,7 @@ export function ProjectsSection() {
                           {/* Technologies */}
                           <div className="mt-6 border-t border-white/10 pt-6">
                             <h4 className="mb-3 text-md font-semibold uppercase tracking-[0.18em] text-slate-400">
-                              Technologies
+                              Technologies/Skills
                             </h4>
 
                             <div className="flex flex-wrap gap-2">
